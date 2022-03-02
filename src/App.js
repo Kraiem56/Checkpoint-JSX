@@ -1,28 +1,19 @@
-
 import './App.css';
-import imageInSrc from "./imageInSrc.PNG"
-import imageInPublic from "./imageInPublic.PNG";
+import Image from './components/Image';
+import Navbar from "./components/Navbar";
 function App() {
   return (
     <div className="App">
-      <div className='Named'>
-        <h1>Mohamed Ben Kraiem</h1>
-      
-      <br />
-      
-        <img className='imageInSrc' src={imageInSrc} alt="" />
-    <br />
-     <img className='imageInPublic' src={imageInPublic} alt="" />
-    </div>
-    <iframe
-    width="320" 
-    height="240" 
-    src="https://www.youtube.com/embed/Oo52vQyAR6w" 
-    title="YouTube video player" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen></iframe>
-    </div>
+      <Navbar/>
+      <div style={{ 
+        backgroundImage: `url("https://i.pinimg.com/originals/38/58/6b/38586b96e64c184e1ddd5fb997789e18.jpg")`  , backgroundPosition: 'center',
+        backgroundSize: 'cover', color:"white",
+        backgroundRepeat: 'no-repeat'
+      }}>
+      <Image />
+      </div>
+      </div>
+
   );
 }
 
